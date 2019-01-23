@@ -14,17 +14,20 @@ import net.minecraftforge.oredict.OreDictionary;
 public class BlockLoader {
     public static Block blockChromite = new BlockChromite();
     public static Block chromeBlock = new BolckChromeBlock();
+    public static Block grassBlock = new BlockGrassBlock();
 
     public BlockLoader(FMLPreInitializationEvent event){
         register(blockChromite,"chromite");
         register(chromeBlock,"chrome_block"); 
         OreDictionary.registerOre("oreChromite", blockChromite);
+        register(grassBlock, "grass_block");
     }
 
     @SideOnly(Side.CLIENT)
     public static void registerRenders(){
         registerRender(blockChromite);
         registerRender(chromeBlock);
+        registerRender(grassBlock);
     }
 
     public static void register(Block block, String name){
