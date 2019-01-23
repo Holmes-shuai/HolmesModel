@@ -32,27 +32,23 @@ public class Study {
     private Logger logger;
 
     @EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
+    public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         proxy.preInit(event);
     }
 
     @EventHandler
-    public void init(FMLInitializationEvent event)
-    {
+    public void init(FMLInitializationEvent event) {
         proxy.init(event);
     }
 
     @EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {
+    public void postInit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
         Study.instance.getLogger().info("Study模组装载成功！");
     }
 
-    public Logger getLogger()
-    {
+    public Logger getLogger() {
         return logger;
     }
 }

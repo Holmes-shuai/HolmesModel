@@ -12,14 +12,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.oredict.OreDictionary;
 
-public class ItemLoader
-{
+public class ItemLoader {
     public static Item goldenEgg = new ItemGoldenEgg();
     public static Item bestSword = new ItemBestSword();
     public static Item chromeIngot = new ItemChromeIngot();
 
-    public ItemLoader(FMLPreInitializationEvent event)
-    {
+    public ItemLoader(FMLPreInitializationEvent event) {
         register(bestSword,"best_sword");
         register(goldenEgg, "golden_egg");
         register(chromeIngot,"chrome_ingot");

@@ -25,8 +25,7 @@ public class OreGenEventHandler {
         if (!TerrainGen.generateOre(event.getWorld(), event.getRand(), worldGenMinable, event.getPos(), OreGenEvent.GenerateMinable.EventType.CUSTOM))
             return;
 
-        for (int i = 0; i < 4; i++)
-        {
+        for (int i = 0; i < 4; i++) {
             int posX = event.getPos().getX() + event.getRand().nextInt(16);
             int posY = 16 + event.getRand().nextInt(16);
             int posZ = event.getPos().getZ() + event.getRand().nextInt(16);
