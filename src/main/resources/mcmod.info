@@ -1,0 +1,16 @@
+[
+{
+  "modid": "study",
+  "name": "Study",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Study"],
+  "credits": "No idea.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

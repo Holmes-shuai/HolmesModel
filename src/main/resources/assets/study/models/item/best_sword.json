@@ -1,0 +1,10 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "study:items/best_sword"
+  },
+  "overrides": [
+    { "predicate": { "isNatsukiSubaru": 0.0000000 }, "model": "study:item/best_sword" },
+    { "predicate": { "isNatsukiSubaru": 1.0000000 }, "model": "study:item/best_sword_broken" }
+  ]
+}
