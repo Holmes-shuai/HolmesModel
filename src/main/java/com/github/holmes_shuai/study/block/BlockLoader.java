@@ -16,7 +16,7 @@ public class BlockLoader {
     public static Block chromeBlock = new BolckChromeBlock();
     public static Block grassBlock = new BlockGrassBlock();
 
-    public BlockLoader(FMLPreInitializationEvent event){
+    public static void init(){
         register(blockChromite,"chromite");
         register(chromeBlock,"chrome_block"); 
         OreDictionary.registerOre("oreChromite", blockChromite);

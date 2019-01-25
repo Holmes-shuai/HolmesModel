@@ -17,7 +17,7 @@ public class ItemLoader {
     public static Item bestSword = new ItemBestSword();
     public static Item chromeIngot = new ItemChromeIngot();
 
-    public ItemLoader(FMLPreInitializationEvent event) {
+    public static void init() {
         register(bestSword,"best_sword");
         register(goldenEgg, "golden_egg");
         register(chromeIngot,"chrome_ingot");
