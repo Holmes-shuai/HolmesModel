@@ -1,6 +1,7 @@
 package com.github.holmes_shuai.study.common;
 
 import com.github.holmes_shuai.study.block.BlockLoader;
+import com.github.holmes_shuai.study.common.crafting.CraftingLoader;
 import com.github.holmes_shuai.study.common.event.PlayerJumpEvent;
 import com.github.holmes_shuai.study.common.world.gen.OreGenEventHandler;
 import com.github.holmes_shuai.study.item.ItemLoader;
@@ -11,6 +12,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
+        ConfigLoader.init(event);
         ItemLoader.init();
         BlockLoader.init();
     }
@@ -19,6 +21,7 @@ public class CommonProxy {
         ItemLoader.addSmelting();
         OreGenEventHandler.init();
         PlayerJumpEvent.init();
+        CraftingLoader.init();
     }
 
     public void postInit(FMLPostInitializationEvent event) {
